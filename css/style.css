@@ -5,16 +5,52 @@
     font-family: 'Rubik Mono One', sans-serif;
 }
 
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .header-container{
-    width: 50%;
+    width: 100%;
     margin: auto;
+    position: relative;
+    
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.central-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.central-hero img{
+    height: 100%;
+}
+
+nav {
+    text-align: right; /*perche' solo se assegno text align al nav e non ai figli o al container mi allinea i pulsanti?*/
 }
 
 li{
     text-decoration: none;
     list-style: none;
     display: inline-block;
-    text-align: center;
+    padding-top: 15px;
+    padding-right: 15px;
 }
 
 a{
@@ -28,7 +64,21 @@ a{
     text-align: center;
 }
 
+
 .main-container{
-    width: 50%;
+    width: 100%;
     margin: auto;
+}
+
+.hero-container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero-1{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
