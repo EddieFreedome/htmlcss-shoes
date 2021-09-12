@@ -11,24 +11,34 @@
     clear: both;
 }
 
+header{
+    width: 100%;
+}
+
 .header-container{
     width: 100%;
     margin: auto;
-    position: relative;
-    
+    position: fixed;
+    z-index: 99;
+    text-align: right;
 }
-
+/*classi colori*/
 .red{
     background-color: red;
+    color: yellow;
 }
 
 .green{
     background-color: green;
+    color: yellow;
 }
 
 .yellow{
     background-color: yellow;
+    color: green;
 }
+/*******************/
+
 
 .central-hero{
     position: absolute;
@@ -41,8 +51,12 @@
     height: 100%;
 }
 
+
+
 nav {
-    text-align: right; /*perche' solo se assegno text align al nav e non ai figli o al container mi allinea i pulsanti?*/
+ /*perche' solo se assegno text align al nav e non ai figli o al container mi allinea i pulsanti?*/
+    right: 0;
+    top: 0;
 }
 
 li{
@@ -56,7 +70,7 @@ li{
 a{
     display: inline-block;
     text-decoration: none;
-    background-color: rgb(8, 255, 140);
+    background-color: white;
     color: black;
     width: 40px;
     line-height: 40px;
@@ -64,6 +78,15 @@ a{
     text-align: center;
 }
 
+img{
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
 
 .main-container{
     width: 100%;
@@ -74,11 +97,12 @@ a{
     height: 100vh;
     width: 100%;
     position: relative;
+    text-align: center;
 }
 
-.hero-1{
+/*.hero-1{
     background-color: red;
     position: absolute;
     top: 0;
     left: 0;
-}
+}*/
